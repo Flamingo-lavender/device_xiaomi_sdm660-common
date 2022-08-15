@@ -80,10 +80,6 @@
     <string name="default_value">Valeur par défaut</string>
     <string name="edit_hint">Valeur entre %1$d et %2$d</string>
 
-    <!-- FPS Info -->
-    <string name="fps_info_title">Superposition FPS</string>
-    <string name="fps_info_summary">Afficher le nombre d\'images par seconde en superposition</string>
-
     <!-- Audio amplification -->
     <string name="audio_amplify">Amplification audio</string>
     <string name="headphone_gain">Gain du casque</string>

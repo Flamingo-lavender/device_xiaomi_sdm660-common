@@ -362,8 +362,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb*     video_mode               0664    system  graphics
 /sys/class/graphics/fb*     format_3d                0664    system  graphics
 /sys/class/graphics/fb*     s3d_mode                 0664    system  graphics
-/sys/class/graphics/fb*     dynamic_fps              0664    system  graphics
-/sys/class/graphics/fb*     msm_fb_dfps_mode         0664    system  graphics
 /sys/class/graphics/fb*     hdr_stream               0664    system  graphics
 /sys/class/graphics/fb*     cec/enable               0664    system  graphics
 /sys/class/graphics/fb*     cec/logical_addr         0664    system  graphics
@@ -378,7 +376,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb*     msm_fb_persist_mode      0664    system  graphics
 
 /sys/class/graphics/fb0     idle_time                0664    system  graphics
-/sys/class/graphics/fb0     dynamic_fps              0664    system  graphics
 /sys/class/graphics/fb0     dyn_pu                   0664    system  graphics
 /sys/class/graphics/fb0     modes                    0664    system  graphics
 /sys/class/graphics/fb0     mode                     0664    system  graphics

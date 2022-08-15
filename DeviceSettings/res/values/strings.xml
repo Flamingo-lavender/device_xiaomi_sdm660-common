@@ -86,10 +86,6 @@
     <string name="default_value">Default value</string>
     <string name="edit_hint">Value between %1$d - %2$d</string>
 
-    <!-- FPS Info -->
-    <string name="fps_info_title">FPS Overlay</string>
-    <string name="fps_info_summary">Show overlay with current frames per second</string>
-    
     <!-- Audio amplification -->
     <string name="audio_amplify">Amplify Audio</string>
     <string name="earpiece_gain">Earpiece Gain</string>
