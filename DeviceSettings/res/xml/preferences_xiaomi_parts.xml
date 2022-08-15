@@ -165,7 +165,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory  
+    <PreferenceCategory
         android:key="speaker"
         android:title="@string/speaker_category">
 
@@ -178,6 +178,6 @@
                 android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
                 android:targetPackage="com.xiaomi.parts.speaker" />
         </Preference>
-      </PreferenceCategory>
+    </PreferenceCategory>
 
 </PreferenceScreen>
