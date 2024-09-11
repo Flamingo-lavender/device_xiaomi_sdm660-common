@@ -1,0 +1,52 @@
+// Copyright 2013 The Android Open Source Project
+// Copyright 2020 The PixelROM Project
+
+// Check for LOCAL_CHARGER_NO_UI flag and conditionally include charger resources
+soong_config_module_type {
+    name: "charger_resources",
+    module_types: ["prebuilt_etc"],
+    config_namespace: "charger_config",
+    vars: ["charger_no_ui"],
+}
+
+prebuilt_etc {
+    name: "product_charger_res_images",
+    local_include_dirs: ["images/charger"],
+    tags: ["optional"],
+    multilib: {
+        lib32: {
+            srcs: ["images/charger/*.png"],
+        },
+    },
+    subdirs: ["images/charger"],
+    relative_install_path: "etc/res/images/charger",
+    product_specific: true,
+    soong_config_variables: {
+        charger_no_ui: {
+            conditions_default: {
+                enabled: true,
+            },
+        },
+    },
+}
+
+prebuilt_etc {
+    name: "pixel_charger_res_values_charger",
+    local_include_dirs: ["values/charger"],
+    tags: ["optional"],
+    multilib: {
+        lib32: {
+            srcs: ["values/charger/*.txt"],
+        },
+    },
+    subdirs: ["values/charger"],
+    relative_install_path: "etc/res/values/charger",
+    product_specific: true,
+    soong_config_variables: {
+        charger_no_ui: {
+            conditions_default: {
+                enabled: true,
+            },
+        },
+    },
+}
